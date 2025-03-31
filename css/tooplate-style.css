@@ -9,7 +9,7 @@ http://www.tooplate.com/view/2100-artist
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700|Playfair+Display');
 
 body {
-    background: #ffffff;
+    background: #f4f4f4;
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -220,12 +220,20 @@ a:hover, a:active, a:focus {
   height: 25vh;
   text-align: center;
   position: relative;
+<<<<<<< HEAD
   margin: 42px 12px 42px 12px;
 }
 
 .home-wrapper {
   background: rgba(107, 103, 98, 0.705);
   /* background: rgba(250, 250, 250, 0.856); */
+=======
+  margin: 82px 12px 0 12px;
+}
+
+.home-wrapper {
+  background: rgba(250, 250, 250, 0.856);
+>>>>>>> main
   padding: 32px 12px;
 }
 
@@ -262,6 +270,7 @@ a:hover, a:active, a:focus {
   border-radius: 5px;
   padding: 42px 32px;
 }
+<<<<<<< HEAD
 /*---------------------------------------
   Depoimento section              
 -----------------------------------------*/
@@ -296,12 +305,20 @@ a:hover, a:active, a:focus {
   border-radius: 5px;
   cursor: crosshair;
 }
+=======
+
+
+>>>>>>> main
 /*---------------------------------------
   Work section              
 -----------------------------------------*/
 
 #work {
+<<<<<<< HEAD
   background: #52452F;
+=======
+  background: #ffffff;
+>>>>>>> main
 }
 
 #work .work-thumb {
@@ -325,6 +342,7 @@ a:hover, a:active, a:focus {
   border-radius: 5px;
   cursor: crosshair;
 }
+<<<<<<< HEAD
 #work p {
   font-size: 21px;
   color: white;
@@ -343,6 +361,13 @@ a:hover, a:active, a:focus {
 #contact {
   background-color: #000000;
 }
+=======
+
+/*---------------------------------------
+  Contact section              
+-----------------------------------------*/
+
+>>>>>>> main
 #contact .form-control {
   border: none;
   border-bottom: 1px solid #f0f0f0;
