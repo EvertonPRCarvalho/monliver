@@ -9,7 +9,7 @@ http://www.tooplate.com/view/2100-artist
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700|Playfair+Display');
 
 body {
-    background: #f4f4f4;
+    background: white;
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -47,7 +47,7 @@ h2 {
 }
 
 h3 {
-  color: #f7b948;
+  color: #64d0e1;
   font-size: 28px;
   font-weight: bold;
   line-height: 32px;
@@ -95,10 +95,18 @@ strong, span {
 }
 
 .arrow-btn i:hover {
-  background: #d7b065;
+  background: #64d0e1;
 }
 
-
+/* Animação para piscar */
+@keyframes piscar {
+  5% {
+    opacity: 10%;
+  }
+}
+.btn-piscar {
+  animation: piscar 1s infinite; /* Duração de 1s, repetindo infinitamente */
+}
 
 /*---------------------------------------
   General               
@@ -148,8 +156,12 @@ a:hover, a:active, a:focus {
   padding-bottom: 80px;
 }
 
-#contact h2, p{
-  color: white;
+#contact h2{
+  color: #332E26;
+  font-weight: bold;
+}
+#contact p{
+  color: #332E26;
 }
 /*---------------------------------------
   Pre loader section              
@@ -205,7 +217,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #home {
-  background: url('../images/macchina-da-taglio-laser-al-plasma-cnc-all-avanguardia-generative-ai_960080-383.avif') 50% 0 repeat-y fixed;
+  background: white;
   background-size: cover;
   background-position: center center;
   border-radius: 5px;
@@ -213,23 +225,66 @@ a:hover, a:active, a:focus {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: nowrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
    align-items: center;
-  height: 25vh;
+  height: 60vh;
   text-align: center;
   position: relative;
-  margin: 42px 12px 42px 12px;
+  margin: 92px 12px 42px 12px;
 }
 
 .home-wrapper {
-  background: rgba(107, 103, 98, 0.705);
-  /* background: rgba(250, 250, 250, 0.856); */
-  padding: 32px 12px;
+  background: white;
+  height: 500px;
+  width: 580px;
+  text-align: left;
+  margin: 0px;
+}
+#home .home-image{
+  height: 450px;
+  width: 335px;
+  margin-left: 60px;
 }
 
+.home-content{
+  display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
 
+.home-wrapper h4 {
+  margin-top: 16px;
+  margin-bottom: 100px;
+}
+
+.home-wrapper a {
+  font-size: 18px;
+  background-color: #da3535;
+  padding: 15px 100px;
+  border-radius: 10px;
+  margin-left: 18%;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+}
+
+#logo{
+  height: 97px;
+  width: 172px;
+}
+
+#letters{
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  color: #4db9d3;
+  font-family: "Varela Round", sans-serif;
+}
+
+#navbar{
+  padding-top: 15px;
+}
 /*---------------------------------------
   About section              
 -----------------------------------------*/
@@ -271,8 +326,15 @@ a:hover, a:active, a:focus {
   padding-bottom: 42px;
 }
 
+#depoimento h2{
+  color: #4db9d3;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
 #depoimento p {
   color: #332E26;
+  font-weight: bold;
 }
 
 #depoimento .depoimento-thumb {
@@ -332,16 +394,25 @@ a:hover, a:active, a:focus {
 
 #work h2 {
   color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 32px;
+  
 }
 
 #work h4 {
   color: white;
 }
+
+#section-image{
+  width: 1150px;
+  margin-left: auto;
+}
 /*---------------------------------------
   Contact section              
 -----------------------------------------*/
 #contact {
-  background-color: #000000;
+  background-color: #64d0e6;
 }
 #contact .form-control {
   border: none;
@@ -368,6 +439,7 @@ a:hover, a:active, a:focus {
   height: 55px;
   padding-bottom: 10px;
   margin-top: 24px;
+  font-weight: bold;
 }
 
 #contact button#submit:hover {
@@ -495,7 +567,27 @@ footer .dash-line {
 @media (max-width: 980px) {
 
  h1 {font-size: 30px;}
-
+.container{
+  text-align: center;
+}
+ .home-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 110px;
+}
+.home-wrapper{
+  width: 425px;
+  margin-top: 15vh;
+  text-align: center;
+}
+#logo{
+ height: 97px;
+ width: 162px;
+}
+ .home-image {
+   visibility:hidden
+ }
  #about .about-thumb {
   padding-left: 0px;
  }
@@ -503,6 +595,10 @@ footer .dash-line {
  #work .work-thumb {
   margin-top: 25px;
  }
+ #section-image{
+  max-width: 100%;
+ }
+
 
 }
 
