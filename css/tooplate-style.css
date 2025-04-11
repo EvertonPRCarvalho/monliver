@@ -248,6 +248,11 @@ a:hover, a:active, a:focus {
   width: 335px;
   margin-left: 60px;
 }
+#banner-site-home-movel{
+  width: 110%;
+  margin: 0% -5%;
+  padding-top: 40px;
+}
 
 .home-content{
   display: grid;
@@ -262,9 +267,21 @@ a:hover, a:active, a:focus {
 .home-wrapper a {
   font-size: 18px;
   background-color: #da3535;
+  padding: 10px 70px;
+  border-radius: 10px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+}
+
+#home .btn-piscar{
+
+  font-size: 18px;
+  background-color: #da3535;
   padding: 15px 100px;
   border-radius: 10px;
-  margin-left: 18%;
+  margin-left: 2.5vh;
+  margin-top: 35vh;
   letter-spacing: 1.5px;
   font-weight: bold;
   font-family: "Varela Round", sans-serif;
@@ -284,6 +301,8 @@ a:hover, a:active, a:focus {
 
 #navbar{
   padding-top: 15px;
+  padding-left: 25px;
+  margin-bottom: 30px;
 }
 /*---------------------------------------
   About section              
@@ -324,17 +343,23 @@ a:hover, a:active, a:focus {
 #depoimento {
   background: #ffffff;
   padding-bottom: 42px;
+  margin-top: 90px;
+}
+.depoimento {
+  margin: auto;
 }
 
 #depoimento h2{
   color: #4db9d3;
   font-weight: bold;
   margin-top: 20px;
+  text-align: center;
 }
 
 #depoimento p {
   color: #332E26;
   font-weight: bold;
+  text-align: center;
 }
 
 #depoimento .depoimento-thumb {
@@ -429,7 +454,6 @@ a:hover, a:active, a:focus {
 #contact input {
   height: 55px;
 }
-
 #contact button#submit {
   background: #da3535;
   border: none;
@@ -581,11 +605,10 @@ footer .dash-line {
   margin-top: 15vh;
   text-align: center;
 }
-#logo{
- height: 97px;
- width: 162px;
+#banner-site-home{
+  display: none;
 }
- .home-image {
+.home-image {
    visibility:hidden
  }
  #about .about-thumb {
