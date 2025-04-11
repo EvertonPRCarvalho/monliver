@@ -611,7 +611,7 @@ footer .dash-line {
 }
 
 #banner-site-home-movel{
-  max-width: 100%;
+  width: 110%;
   margin: 0% -5%;
   padding-top: 40px;
 }
