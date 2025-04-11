@@ -249,9 +249,7 @@ a:hover, a:active, a:focus {
   margin-left: 60px;
 }
 #banner-site-home-movel{
-  width: 110%;
-  margin: 0% -5%;
-  padding-top: 40px;
+  width: 0%;
 }
 
 .home-content{
@@ -608,6 +606,13 @@ footer .dash-line {
 #banner-site-home{
   display: none;
 }
+
+#banner-site-home-movel{
+  width: 110%;
+  margin: 0% -5%;
+  padding-top: 40px;
+}
+
 .home-image {
    visibility:hidden
  }
