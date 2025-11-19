@@ -277,8 +277,17 @@ a:hover, a:active, a:focus {
 
 #home .btn-piscar{
 
-  font-size: 18px;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  font-size: 14px;
   background-color: #da3535;
+  padding: 15px 100px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+  font-size: 18px;
   padding: 15px 100px;
   border-radius: 10px;
   margin-left: 2.5vh;
@@ -472,8 +481,9 @@ a:hover, a:active, a:focus {
   color: #ffffff;
 }
 #contact a {
+  top: 20%;
+  left: 15%;
   font-size: 18px;
-  margin: 20%;
   background-color: #da3535;
   padding: 15px 100px;
   border-radius: 10px;
@@ -652,6 +662,12 @@ footer .dash-line {
   footer .copyright-text {
     padding-bottom: 12px;
   }
+  #contact a {
+  font-size: 14px;
+  background-color: #da3535;
+  padding: 10px 80px;
+  border-radius: 10px;
+}
 
 }
 
@@ -669,9 +685,29 @@ footer .dash-line {
 
 }
 
+ #depoimento{
+  margin-top: 250px;
+ }
+
+ #home .btn-piscar{
+    padding: 10px 50px;
+    top: 40%;
+    left: 10%;
+  }
+
 @media (max-width: 360px) {
   #home {
+    text-align: center;
     height: 85vh;
   } 
+  #home .btn-piscar{
+    padding: 10px 50px;
+    top: 40%;
+    left: 5%;
+  }
+  #depoimento{
+    margin-top: 0px;
+  }
+  
 
 }
